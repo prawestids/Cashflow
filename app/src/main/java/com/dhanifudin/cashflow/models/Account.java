@@ -54,9 +54,9 @@ public class Account {
         this.balance = 0;
         for (Transaction t : transactions) {
             if (t.getType() == Transaction.Type.CREDIT) {
-                balance += transaction.getAmount();
+                this.balance += t.getAmount();
             } else {
-                balance -= transaction.getAmount();
+                this.balance -= t.getAmount();
             }
         }
     }
