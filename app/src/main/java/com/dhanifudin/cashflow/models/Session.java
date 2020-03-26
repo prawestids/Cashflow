@@ -38,7 +38,7 @@ public class Session {
         String token = preferences.getString(TOKEN_KEY, null);
         return (token != null);
     }
-
+//validasi data buat login(username dan password)
     public boolean validate(String username, String password) {
         if (username.equals("admin") && password.equals("rahasia")) {
             setSession(username);
